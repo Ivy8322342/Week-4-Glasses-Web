@@ -1,0 +1,187 @@
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+.d-md-inline{
+    @include pad{
+        display: inline;
+    }
+}
+.d-md-none{
+    @include pad{
+        display: none;
+    }
+}
+.d-sm-none{
+    @include phone{
+        display: none;
+    }
+}
+
+// bg-color
+.bg-primary{
+    background-color: $primary;
+}
+.bg-primary-dark{
+    background-color: $primary-dark;
+}
+.bg-light{
+    background-color: $light;
+}
+.bg-dark{
+    background-color: $dark;
+}
+
+.text-white{
+    color:$light;
+}
+
+.text-dark{
+    color:$dark;
+}
+
+.text-primary{
+    color:$primary;
+}
+
+.text-primary-dark{
+    color:$primary-dark;
+}
+
+.text-gray{
+    color:#555555;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.t-end{
+    text-align: end;
+}
+// font
+
+.fz-16{
+    font-size: 16px;
+}
+
+.fz-20{
+    font-size: 20px;
+}
+
+.fz-24{
+    font-size: 24px;
+}
+
+.fz-30{
+    font-size: 30px;
+}
+
+.fz-32{
+    font-size: 32px;
+}
+
+.fz-36{
+    font-size: 36px;
+}
+.fz-40{
+    font-size: 40px;
+}
+
+.fz-48{
+    font-size: 48px;
+}
+
+.fz-64{
+    font-size: 64px;
+}
+
+.fz-md-24{
+    @include pad{
+        font-size: 24px;
+    }
+} 
+
+.fz-md-20{
+    @include pad{
+        font-size: 20px;
+    }
+} 
+
+.fz-md-16{
+    @include pad{
+        font-size: 16px;
+    }
+} 
+
+.fz-sm-16{
+    @include phone{
+        font-size: 16px;
+    }
+}
+
+.fz-sm-24{
+    @include phone{
+        font-size: 24px;
+    }
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+.fw-md{
+    font-weight: 500;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+.gap-48-24{
+    gap:48px 24px;
+}
+
+// 一些共用class
+.container{
+    margin:0 auto;
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @include pad{
+        max-width: 840px;
+        padding-left: 36px;
+        padding-right:36px;
+       
+    }
+
+    @include phone{
+        width: 100%;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+}
+
+.card-text-dark{
+    color:#212529;
+}
+
+.page-title {
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
+
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+
+
+

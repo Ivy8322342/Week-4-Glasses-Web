@@ -1,0 +1,192 @@
+.second-top-menu{
+    .container{
+        @include pad{
+           max-width: 100%;
+           padding-left: 0;
+           padding-right: 0;
+        }
+    }
+    .active{
+        border-bottom: 9px solid $primary;
+        padding-bottom: 16px;
+        @include pad{
+            padding-bottom: 7px;
+         }
+    }
+    li{ width:calc(100% / 3);
+        a{
+            display: block;
+            padding: 24px 0;
+            background-color: $light;
+            border: 1px solid #DCDCDC;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color:#e7d5d5 ;
+            }
+
+            @include pad{
+                padding:16px 0;
+            }
+        }
+    }
+}
+
+.product-banner{
+    li{
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 296px;
+        @include phone{
+            height: 136px;
+        }
+    }
+
+    .left-banner{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+        @include pad{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+
+        }
+       
+    }
+    
+    .right-banner{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+        @include pad{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+        }
+    }
+
+    .left-banner.sunglasses{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+        @include pad{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+        }
+       
+    }
+    
+    .right-banner.sunglasses{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+        @include pad{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+        }
+    }
+}
+
+.products{
+    h2{
+        font-size: 42px;
+        @include phone{
+            font-size: 24px;
+        }
+    }
+    h3{
+        font-size: 32px;
+        margin-bottom: 32px;
+        @include phone{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    
+
+    .products-content{
+        margin-bottom: 80px;
+        gap:80px 24px;
+        .product-card{
+            .product-id,.price{
+                font-size: 24px;
+            }
+    
+            p:nth-of-type(1){
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            p:nth-of-type(2){
+                display: flex;
+            }
+    
+            .product-id{
+                color:$dark;
+            }
+    
+            .price{
+                color:$primary;
+                font-weight: 500;
+            }
+    
+            .color-style{
+                span{
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 4px;
+                }
+                span:nth-of-type(1){
+                   background-color: #5F3E2D;
+                   margin-right: 8px;
+                }
+    
+                span:nth-of-type(2){ 
+                    background-color: #B75929;
+                }
+            }
+        }
+
+        @include pad{
+            gap:40px 24px;
+        }
+
+        @include phone{
+            margin-bottom: 64px;
+            gap:24px;
+        }
+
+    }
+
+    .optical{
+        .product-card{
+            width: calc((100% - 72px) / 4);
+            .img-container{
+                width: 100%;
+                height: 168px;
+            }
+
+            @include pad{
+                width: calc((100% - 24px) / 2);
+            }
+    
+            @include phone{
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .sunglasses{
+        .product-card{
+            width: calc((100% - 72px) / 3);
+            .img-container{
+                width: 100%;
+                height: 224px;
+            }
+
+            @include pad{
+                width: calc((100% - 24px) / 2);
+            }
+    
+            @include phone{
+                width: 100%;
+            }
+        }
+    }
+
+    
+
+    
+    
+}

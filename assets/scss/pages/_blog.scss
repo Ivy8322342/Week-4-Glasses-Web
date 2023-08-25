@@ -1,0 +1,168 @@
+.mr-15px{
+	margin-right: 15px;
+}
+.second-menu a{
+	display: block;
+	position: relative;
+
+	&:hover::after{
+		transform: scale(1);
+	}
+
+	&:after{
+		content:"";     
+		display:inline-block;
+		height: 1px;
+		border-bottom: 3px solid $light;
+		width: 100%;
+		transform: scale(0);
+		position: absolute;
+		left: 0;
+		bottom: -3px;
+		transition: all 0.5s;
+
+	  }
+}
+
+.material-symbols-outlined.search{
+	transition: all 0.3s;
+	&:hover{
+		transform: scale(1.2);
+	}
+}
+
+.blog-card{
+	
+	gap:24px;
+	.img-container,.text-content{
+		width: 50%;
+	}
+	.text-content{
+		.text{
+			
+			@include pad{
+				.ellipsis{
+					position: relative;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 6;
+					overflow: hidden;
+					width: 350px;
+					.tail-more{
+						color:#555555;
+						position: absolute;
+						bottom:0px;
+						right:-20px;
+						
+				
+					}
+				}
+			}
+			@include phone{
+				.ellipsis{
+					display: none;
+				}
+			}
+			flex-grow: 1;
+			.date{
+				opacity: 0.7;
+			}
+			.text-dark-70{
+				color:hsla(0, 0%, 0%, 0.7);
+			}
+		}
+	}
+
+   .more{
+	transition: all 0.3s;
+	&:hover{
+		font-size: 40px;
+	}
+   }
+
+   @include phone{
+	gap:0;
+	flex-wrap: wrap;
+	.img-container{
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	.text-content{
+		width: 100%;
+	}
+   }
+
+  
+}
+
+.breadcrumb{
+	a{  position: relative;
+		transition: all 0.3s;
+		&:hover{
+		   color: $primary;
+		}
+	}
+}
+.post-content{
+	width: 66%;
+	@include phone{
+		width: 100%;
+	}
+	p{
+		color:#555555;
+	}
+}
+
+.label.mr-3{
+	@include pad{
+		margin-right: 2px;
+	}
+}
+
+.tags-list{
+	width: 280px;
+	@include pad{
+		width: 136px;
+	}
+
+	
+	a{
+		transition: all 0.3s;
+		&:hover{
+		   color:#555555;
+		}
+	}
+}
+
+.share{
+	border-bottom:1px solid $dark ;
+	img{
+		width: 24px;
+	}
+}
+
+.pre-next{
+	a{
+		transition: all 0.3s;
+		&:hover{
+			color:$primary;
+		}
+	}
+}
+
+.second-menu{
+		.fz-20{
+			@include phone{
+				font-size: 16px;
+			}
+		}
+		.mr-12{
+			@include phone{
+				margin-right: 24px;
+			}
+		}
+} 
+
+
+
+

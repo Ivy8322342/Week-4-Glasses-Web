@@ -1,0 +1,33 @@
+.d-flex{
+    display: flex;
+}
+
+.flex-dir-col{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jc-sm-center{
+    @include phone{
+        justify-content: center;
+    }
+}
+
+.aict{
+    align-items: center;
+}
+
+.jcct{
+    justify-content: center;
+}
+
+.align-self-end{
+    align-self: flex-end;
+}

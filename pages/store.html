@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include('./layout/outerlink'); -%>
+    <title>store</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container pt-96 pt-md-80 pt-sm-40 pb-80 pb-sm-64">
+      <h1 class="page-title fz-48 fz-sm-24 fw-bold mb-8 mb-sm-6">門市據點</h1>
+      <div class="selector d-flex aict mb-10 mb-sm-6">
+        <label for="location" class="fz-24 fz-sm-16 mr-4 mr-sm-2">選擇地區</label>
+        <select name="location" id="location" class="select">
+          <option value="台北市">台北市</option>
+          <option value="台中市">台中市</option>
+          <option value="台南市">台南市</option>
+          <option value="高雄市">高雄市</option>
+        </select>
+
+      </div>
+
+      <ul class="location-content d-flex flex-wrap gap-48-24">
+        <li class="card card-text-dark"> 
+          <div class="img-container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="台北中山旗艦店">
+          </div>
+            <h3 class="store-name fz-24">台北中山旗艦店</h3>
+            <div class="details fz-20">
+              <p class="phone"><span class="material-symbols-outlined mb-2 fz">
+                call
+                </span>
+                <span>電話：(02)000-1234</span></p>
+              <p class="time"><span class="material-symbols-outlined mb-2">
+                schedule
+                </span><span>營業時間：10:00-21:00</span></p>
+              <p class="store-location"><span class="material-symbols-outlined">
+                location_on
+                </span><span>地址：台北市中山區南京東路25巷2-1號</span></p>
+            </div><a href="./store_detail.html" class="more-inf text-white t-center fz-20">詳細資訊</a>
+        </li>
+
+        <li class="card card-text-dark"> 
+          <div class="img-container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true" alt="台北中山旗艦店">
+          </div>
+            <h3 class="store-name fz-24">台北綠園店</h3>
+            <div class="details fz-20">
+              <p class="phone"><span class="material-symbols-outlined mb-2 fz">
+                call
+                </span>
+                <span>電話：(02)000-2345</span></p>
+              <p class="time"><span class="material-symbols-outlined mb-2">
+                schedule
+                </span><span>營業時間：10:00-21:00</span></p>
+              <p class="store-location"><span class="material-symbols-outlined">
+                location_on
+                </span><span>地址：台北市中正區復興南路 132-1 號</span></p>
+            </div><a href="./store_detail.html" class="more-inf text-white t-center fz-20">詳細資訊</a>
+        </li>
+
+        <li class="card card-text-dark"> 
+          <div class="img-container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true" alt="台北中山旗艦店">
+          </div>
+            <h3 class="store-name fz-24">台中清水旗艦店</h3>
+            <div class="details fz-20">
+              <p class="phone"><span class="material-symbols-outlined mb-2 fz">
+                call
+                </span>
+                <span>電話：(02)000-1234</span></p>
+              <p class="time"><span class="material-symbols-outlined mb-2">
+                schedule
+                </span><span>營業時間：10:00-21:00</span></p>
+              <p class="store-location"><span class="material-symbols-outlined">
+                location_on
+                </span><span>地址：台中市清水區經南一路 23 號 8 樓</span></p>
+            </div><a href="./store_detail.html" class="more-inf text-white t-center fz-20">詳細資訊</a>
+        </li>
+
+        <li class="card card-text-dark"> 
+          <div class="img-container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true" alt="台北中山旗艦店">
+          </div>
+            <h3 class="store-name fz-24">高雄中正形象店</h3>
+            <div class="details fz-20">
+              <p class="phone"><span class="material-symbols-outlined mb-2 fz">
+                call
+                </span>
+                <span>電話：(07)000-2345</span></p>
+              <p class="time"><span class="material-symbols-outlined mb-2">
+                schedule
+                </span><span>營業時間：10:00-21:00</span></p>
+              <p class="store-location"><span class="material-symbols-outlined">
+                location_on
+                </span><span>地址：高雄市苓雅區中正路 38 號 12 樓</span></p>
+            </div><a href="./store_detail.html" class="more-inf text-white t-center fz-20">詳細資訊</a>
+        </li>
+
+        <li class="card card-text-dark"> 
+          <div class="img-container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true" alt="台北中山旗艦店">
+          </div>
+            <h3 class="store-name fz-24">高雄夢時代店</h3>
+            <div class="details fz-20">
+              <p class="phone"><span class="material-symbols-outlined mb-2 fz">
+                call
+                </span>
+                <span>電話：(07)000-1234</span></p>
+              <p class="time"><span class="material-symbols-outlined mb-2">
+                schedule
+                </span><span>營業時間：10:00-21:00</span></p>
+              <p class="store-location"><span class="material-symbols-outlined">
+                location_on
+                </span><span>地址：高雄市前鎮區中華一路 63 號 6 樓</span></p>
+            </div><a href="./store_detail.html" class="more-inf text-white t-center fz-20">詳細資訊</a>
+        </li>
+      </ul>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

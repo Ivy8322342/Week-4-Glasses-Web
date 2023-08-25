@@ -1,0 +1,19 @@
+@mixin link-hover{
+    transition: all 0.3s;
+
+    &:hover{
+        @content;
+    }
+}
+
+@mixin pad{
+    @media (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin phone{
+    @media (max-width:767px) {
+        @content;
+    }
+}

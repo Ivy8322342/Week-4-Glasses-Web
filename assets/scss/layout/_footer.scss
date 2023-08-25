@@ -1,4 +1,134 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+	padding-top: 60px;
+	@include phone{
+		padding-top: 35px;
+	}
+	@include phone{
+		padding-top: 24px;
+	}
+
+	a{
+		color:$light;
+	}
+
+	&-nav{
+		margin-bottom: 36px;
+		@include pad{
+			margin-bottom: 32px;
+		}
+		.footer-menu{
+			li a{
+				margin-right: 48px;
+				@include link-hover{
+					color:$translucent;
+				}
+			}
+		   
+		}
+	
+		.social-icons{
+			gap: 32px;
+			@include pad{
+                gap:16px;
+			}
+			@include phone{
+                gap:8px;
+			}
+			li a{display: block;
+				@include link-hover{
+					transform: scale(1.1);
+				}
+				img{
+					width: 48px;
+					vertical-align: top;
+					@include pad{
+						width: 40px;
+					}
+					@include phone{
+						width: 24px;
+					}
+				}
+				
+			}
+		} 
+
+	   
+
+	}
+
+
+	.contact-methods{
+		padding-bottom: 32px;
+		@include phone{
+			padding-bottom: 24px;
+		}
+		a{
+			@include link-hover{
+				color:$translucent;
+			}
+			.material-symbols-outlined{
+				vertical-align:text-bottom;
+			}
+
+		}
+		
+	} 
+
+	&-bottom{
+		padding-bottom: 32px;
+		padding-top: 32px;
+		@include pad{
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		@include phone{
+			padding-bottom: 24px;
+			padding-top: 24px;
+			flex-direction: column;
+			gap:8px;
+		}
+	}
+
+	.law a{
+		margin-left: 48px;
+		font-size: 14px;
+		@include phone{
+			font-size: 16px;
+			display: block;
+			margin-left:0;
+			&:nth-of-type(1){
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+
+	
+}
+.footer-info{
+	border-bottom: 1px solid $light;
+	@include phone{
+		font-size: 16px;
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		.footer-menu{
+			display: none;
+		}
+
+		.fz-36{
+			font-size: 16px;
+		}
+
+		.mr-5{
+			margin-right: 11px;
+		}
+
+		.material-symbols-outlined.fz-36{
+			font-size: 18px;
+		}
+	   
+	}
 }
